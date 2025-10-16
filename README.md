@@ -1,8 +1,9 @@
 # JavaScriptTutorial
 This repository contains all the codes and notes of JavaScript that I have learnt from JavaScript Tutorial Full Course - Beginner to Pro course by SuperSimpleDev
 
+<br>
 
-16 OCT:       01:50:45 to 02:32:27            Homework 4
+16 OCT:       01:50:45 to 02:32:27            Homework 4<br>
 17 OCT:
 18 OCT:
 19 OCT:
