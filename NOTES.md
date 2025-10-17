@@ -38,3 +38,15 @@
 11. typeof <varialbe>       //states the type of the data
     typeof <value>
 
+12. eval()    //allows us to evaluate string to Arithematic expression
+
+
+#6 BOOLEANS
+
+1. ===        //equal to
+2. !==        //not equal to
+3. ==, !=     //tries to convert both operators into same type
+
+  IF STATEMENT
+
+1. 
