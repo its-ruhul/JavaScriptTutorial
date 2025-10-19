@@ -82,3 +82,15 @@
   Ex: variable defined inside if statement stays in if statement
 
 6. var doesn't follow scope, that's why var is not used nowadays.
+
+
+#7 FUNCTIONS
+
+1. function <identifier> (<parameter1> = <default>, <paramemter2>) {
+    //function body
+
+    return <data>;
+  }
+
+2. <identifier>(<parameter1>, <parameter2>);
+  //Calling a function.
