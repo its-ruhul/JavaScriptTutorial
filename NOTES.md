@@ -47,6 +47,30 @@
 2. !==        //not equal to
 3. ==, !=     //tries to convert both operators into same type
 
+4. Falsy Values: false  0   ''  undefined   null
+5. Any value no on the list is truthy.
+
+7. NaN is returned on a invalid Math.
+
+8. undefined doesn't have a value.
+  const can't be left undefined, if we really have to then
+  const <variable> = undefined;
+
+9. Ternary:     //can be stored in a varaible
+  <exp1> ? <exp2> : <exp3>;
+
+10. && ends beforehand if the prior value is false.
+    This is called short circuiting.
+
   IF STATEMENT
 
-1. 
+1. Math.random()  //generates random no. in [0,1)
+
+2. &&             //AND
+3. ||             //OR
+4. !              //NOT
+
+5. Scope: A scope limits where a variable exists.
+  Ex: variable defined inside if statement stays in if statement
+
+6. var doesn't follow scope, that's why var is not used nowadays.
