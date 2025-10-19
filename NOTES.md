@@ -60,7 +60,15 @@
   <exp1> ? <exp2> : <exp3>;
 
 10. && ends beforehand if the prior value is false.
-    This is called short circuiting.
+    This is called short circuiting. Eg:
+
+    let <variable> = false && '<string>';
+
+    //substituition for simple if statement.
+
+11. || ends beforehand if prior value is true. Eg: 
+
+    let <variable> = true && <data>;
 
   IF STATEMENT
 

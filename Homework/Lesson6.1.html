@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      let hour = 13;
+      let name = 'Ruhul'
+
+      if (hour >= 6 && hour <= 12){
+        console.log(`Good morning ${name}!`);
+      }
+      else if (hour >= 13 && hour <= 17){
+        console.log(`Good afternoon ${name}!`);
+      }
+      else {
+        console.log(`Good night ${name}!`);
+      }
+
+      hour = 7;
+
+      if (hour >= 6 && hour <= 12){
+        console.log('Good morning!');
+      }
+      else if (hour >= 13 && hour <= 17){
+        console.log('Good afternoon!');
+      }
+      else {
+        console.log('Good night!');
+      }
+
+      let age = 69;
+      let isHoliday = true;
+
+      if ((age < 6 || age > 65) && !isHoliday){
+        console.log('DISCOUNT!');
+      }
+      else {
+        console.log('NO DISCOUNT');
+      }
+
+      let num = Math.random();
+      let toss = '';
+
+      if (num < 0.5){
+        toss = 'Heads';
+      }
+      else {
+        toss = 'Tails';
+      }
+
+      let guess = 'Heads';
+
+      if (toss == guess){
+        console.log('You win');
+      }
+      else {
+        console.log('You lose');
+      }
+
+      let result = (toss == guess ? 'You win' : 'You lose' );
+
+      console.log(result);
+
+
+    </script>
+  </body>
+</html>
