@@ -94,3 +94,88 @@
 
 2. <identifier>(<parameter1>, <parameter2>);
   //Calling a function.
+
+
+#OBJECTS
+
+1. Object can be used to store multiple values.
+  let <object> = {
+    <var1>: <value1>,   //property: value
+    <var2>: <value2>    //property value pair
+  };
+
+2. <object>.<var1>      //gives <value1>
+  //dot notation
+
+3. <object>.<var2> = <value3>;
+
+4. //assigning property (dot notation)
+  <object>.<newVar> = <newVal>;
+
+5. //deleting property
+  <object>.<var1>;
+
+6. //bracket notation
+  <object>['<var1>']
+
+  <object> {
+    ['<var1>']: <val1>,
+    '<var2> : <val2>,
+
+    <var3>: function <function>() {
+
+    }
+  };
+
+  //bracket notation is helpful for variables with '-'
+  //since, javascript treats it as minus sign while calling
+  //can perforem operations inside it
+
+7. function inside object is a method.
+
+8. // while defining an object if <variable> === <value>
+  <variable>: <value>,      //can be rewritten as
+  <varialble>,
+
+9. //insted of this inside an object
+  <function>: function <function>() {
+    }
+
+  <function>() {
+    
+  }
+
+8. BUILT IN OBJECTS:
+  Math, JSON, localStorage
+
+9. JSON: just like JavaScript object but less features.
+  use of double quotes only for variable and values.
+  doesn't support functions inside it.
+
+  it is compatible with many programming language
+
+10. JSON.stringify(<object>)      //converts object to JSON
+  //returns a string value.
+
+11. JSON.parse(<object>)      //converts JSON to object
+
+    #LocalStorage
+
+12. localStorage.setItem('<var1>, '<value1>);
+  localStorage.getItem('<var1>,);
+
+13. 'null' : intentionally watnt something to be empty.
+  'undefined': unintentional null (function treats  null as a variable)
+
+14. '<string>'.lenght;
+  '<string>'.toUpperCase();
+
+15. can't equate to objects with same value.
+
+16. cosnt message = <object>.message;      //This can be rewritten as
+  const {message} = <object>;              //Same as above
+  const {<var1>, <value1>} = <object>;
+
+17. 
+
+  
