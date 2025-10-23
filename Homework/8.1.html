@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 8</title>
+  </head>
+  <body>
+
+    <script>
+      
+      const product1 = {
+        name : 'basketball',
+        cost : 2095
+      };
+
+      console.log(product1.name);
+      console.log(product1.cost);
+
+      product1.cost += 500;
+      console.log(product1.cost);
+
+      product1.deliveryTime = '3 days';
+      console.log(product1.deliveryTime);
+
+      const product2 = {
+        name: 'football',
+        cost: 1599
+      };
+
+      function comparePrice(product1, product2) {
+  
+        if (product1.cost < product2.cost){
+          return product1.name;
+        }
+        else if (product1.cost > product2.cost){
+          return product2.name;
+        }
+        else {
+          return null;
+        }
+      }
+
+      comparePrice(product1, product2);
+
+      function isSameProduct(product1, product2){
+
+        if (product1.cost === product2.cost){
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+
+    </script>
+  </body>
+</html>
