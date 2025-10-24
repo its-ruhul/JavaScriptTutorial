@@ -11,7 +11,7 @@ This repository contains all the codes and notes of JavaScript that I have learn
 21 OCT:                                     <br>
 22 OCT:  04:56:11 to 05:25:32               <br>
 23 OCT:
-24 OCT:
+24 OCT:  05:25:35 to 05:47:18  Hoomwork 8   <br>
 25 OCT:
 26 OCT:
 27 OCT:

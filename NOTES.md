@@ -181,6 +181,15 @@
 
 # 9 DOCUMENT OBJECT MODEL
 
+1. document is an object that allows us to access the html code.
 
+2. document.title     //accesses the title
+3. document.body
+
+4. documnent.querySelector('<tag-name>')  //accesses any tag
+
+5. every object has an element innerHTML which accesses the things inside that value.
+
+6. in dot notion we can put some of it in next line starting with a dot.
 
   
