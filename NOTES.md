@@ -41,7 +41,7 @@
 12. eval()    //allows us to evaluate string to Arithematic expression
 
 
-#6 BOOLEANS
+# 6 BOOLEANS
 
 1. ===        //equal to
 2. !==        //not equal to
@@ -96,7 +96,7 @@
   //Calling a function.
 
 
-#OBJECTS
+# 7 OBJECTS
 
 1. Object can be used to store multiple values.
   let <object> = {
@@ -169,6 +169,8 @@
 
 14. '<string>'.lenght;
   '<string>'.toUpperCase();
+  '<string>'.toLowerCase();
+  '<string>'.repeat(<num>);
 
 15. can't equate to objects with same value.
 
@@ -176,6 +178,9 @@
   const {message} = <object>;              //Same as above
   const {<var1>, <value1>} = <object>;
 
-17. 
+
+# 9 DOCUMENT OBJECT MODEL
+
+
 
   

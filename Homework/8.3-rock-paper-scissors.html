@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+
+    <button onclick="
+      performToss('heads');
+      ">heads</button>
+
+    <button onclick="
+      performToss('tails');
+    ">tails</button>
+
+    <script>
+
+      let num = Math.random();
+      let toss = '';
+      
+      let score = {
+        wins: 0,
+        losses: 0,
+      };
+
+      let storedScore = JSON.parse(localStorage.getItem('score'));
+
+      if (storedScore){
+        score.wins = storedScore.wins;
+        score.losses = storedScore.losses
+      }
+
+      if (num < 0.5){
+        toss = 'heads';
+      }
+      else {
+        toss = 'tails';
+      }
+
+      function performToss(guess) {
+
+        if (toss === guess){
+
+          console.log('You win');
+          score.wins++;
+        }
+        else {
+          console.log('You lose');
+          score.losses++;
+        }
+
+        console.log(`Wins: ${score.wins}`);
+        console.log(`Losses: ${score.losses}`);
+
+        localStorage.setItem( 'score', JSON.stringify(score));
+      }
+    </script>
+  </body>
+</html>
