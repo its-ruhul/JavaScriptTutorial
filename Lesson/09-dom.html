@@ -11,13 +11,16 @@
 
     <button class="js-button">Second button</button>
 
+
     <script>
 
       console.log(document.querySelector('button').innerHTML);
 
       document.querySelector('button').innerHTML = 'Changed';
 
-      console.log(document.querySelector('.js-button'));
+      const buttonElement = document.querySelector('.js-button');
+
+      console.log(buttonElement);
 
       /*
 
