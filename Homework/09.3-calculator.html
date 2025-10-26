@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Calculator
+    </title>
+  </head>
+
+  <body>
+
+    <p>Calculator</p>
+
+    <p class="display-calculation-para"></p>
+
+    <button onClick="
+      updateCalculation('1');
+    ">1</button>
+
+    <button onClick="
+      updateCalculation('2');
+    ">2</button>
+
+    <button onClick="
+      updateCalculation('3');
+    ">3</button>
+
+    <button  onClick="
+      updateCalculation(' + ');
+    ">+</button>
+
+    <p></p>
+
+    <button onClick="
+      updateCalculation('4');
+    ">4</button>
+
+    <button onClick="
+      updateCalculation('5');
+    ">5</button>
+
+    <button onClick="
+      updateCalculation('6');
+    ">6</button>
+
+    <button onClick="
+      updateCalculation(' - ');
+    ">-</button>
+
+    <p></p>
+
+    <button onClick="
+      updateCalculation('7');
+    ">7</button>
+
+    <button onClick="
+      updateCalculation('8');
+    ">8</button>
+
+    <button onClick="
+      updateCalculation('9');
+    ">9</button>
+
+    <button onClick="
+      updateCalculation(' * ');
+    ">*</button>
+
+    <p></p>
+
+    <button onClick="
+      updateCalculation('0');
+    ">0</button>
+
+      <button onClick="
+      updateCalculation('.');
+    ">.</button>
+
+    <button onClick="
+      calculation = eval(calculation);
+      console.log(calculation);
+      const outputPara = document.querySelector('.display-calculation-para');
+      outputPara.innerHTML = eval(calculation);
+    ">=</button>
+
+    <button onClick="
+      updateCalculation(' / ');
+    ">/</button>
+
+    <p></p>
+
+    <button onClick="
+      calculation = '';
+      console.log(calculation);
+      const outputPara = document.querySelector('.display-calculation-para');
+      outputPara.innerHTML = '';
+    ">Clear</button>
+
+    <script>
+      let calculation = '';
+      let storedCalcution = localStorage.getItem('calculation');
+
+      console.log(storedCalcution);
+      
+      if(storedCalcution){
+        calculation = storedCalcution;
+      }
+      else{
+        calculation = 0;
+      }
+
+      function updateCalculation (operator) {
+        calculation += operator;
+        console.log(calculation);
+
+        const outputPara = document.querySelector('.display-calculation-para');
+        outputPara.innerHTML = calculation;
+
+        localStorage.setItem('calculation', calculation);
+      }
+
+    </script>
+  </body>
+</html>

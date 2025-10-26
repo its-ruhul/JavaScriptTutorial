@@ -37,29 +37,30 @@
 
     ">Remove from cart</button>
 
+  <p class="display-cart-quantity"></p>
+
   <script>
 
     let cartQuantity = 0;
 
     function updateCartQuantity(num, operator){
 
+      const cartQtyPara = document.querySelector('.display-cart-quantity');
+
       if (cartQuantity < 10 && operator === '+'){
-        if (operator === '+'){
-          cartQuantity += num;
-        }
+        cartQuantity += num;
       }
       else if(cartQuantity > 0 && operator === '-'){
         cartQuantity -= num;
       }
       else if (cartQuantity >= 10){
-        console.log('Cart is full');
+        cartQtyPara.innerHTML = 'Cart is full';
       }
       else{
-        console.log('Cart is empty');
+        cartQtyPara.innerHTML = 'Cart is empty';
       }
 
-      
-      console.log(`Cart quantity: ${cartQuantity}`);
+      cartQtyPara.innerHTML = `Cart quantity: ${cartQuantity}`;
     }
 
   </script>
