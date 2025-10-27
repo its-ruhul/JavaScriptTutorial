@@ -13,8 +13,8 @@ This repository contains all the codes and notes of JavaScript that I have learn
 23 OCT:                                     <br>
 24 OCT:  05:25:35 to 05:47:18  Homework 8   <br>
 25 OCT:  05:47:18 to 06:38:24               <br>
-26 OCT:
-27 OCT:
+26 OCT:  06:38:24 to 06:38:56  Hoemwork 9   <br>
+27 OCT:  06:38:56 to 00:00:00               <br>
 28 OCT:
 29 OCT:
 30 OCT:
