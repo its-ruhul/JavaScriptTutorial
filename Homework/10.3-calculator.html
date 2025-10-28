@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Calculator
+    </title>
+
+    <link rel="stylesheet" href="styles/10.3-calculator.css">
+  </head>
+
+  <body>
+
+    <p class="display-calculation-para"></p>
+
+    <button onClick="
+      updateCalculation('1');
+    ">1</button>
+
+    <button onClick="
+      updateCalculation('2');
+    ">2</button>
+
+    <button onClick="
+      updateCalculation('3');
+    ">3</button>
+
+    <button class="operator-button" onClick="
+      updateCalculation(' + ');
+    ">+</button>
+
+    <p></p>
+
+    <button onClick="
+      updateCalculation('4');
+    ">4</button>
+
+    <button onClick="
+      updateCalculation('5');
+    ">5</button>
+
+    <button onClick="
+      updateCalculation('6');
+    ">6</button>
+
+    <button class="operator-button" onClick="
+      updateCalculation(' - ');
+    ">-</button>
+
+    <p></p>
+
+    <button onClick="
+      updateCalculation('7');
+    ">7</button>
+
+    <button onClick="
+      updateCalculation('8');
+    ">8</button>
+
+    <button onClick="
+      updateCalculation('9');
+    ">9</button>
+
+    <button class="operator-button" onClick="
+      updateCalculation(' * ');
+    ">*</button>
+
+    <p></p>
+
+    <button onClick="
+      updateCalculation('0');
+    ">0</button>
+
+    <button class="operator-button" onClick="
+      updateCalculation('.');
+    ">.</button>
+
+    <button class="operator-button" onClick="
+      calculation = eval(calculation);
+      console.log(calculation);
+      const outputPara = document.querySelector('.display-calculation-para');
+      outputPara.innerHTML = eval(calculation);
+    ">=</button>
+
+    <button class="operator-button" onClick="
+      updateCalculation(' / ');
+    ">/</button>
+
+    <p></p>
+
+    <button onClick="
+      calculation = '';
+      console.log(calculation);
+      const outputPara = document.querySelector('.display-calculation-para');
+      outputPara.innerHTML = '';
+    ">AC</button>
+
+    <script src="scripts/10.3-calculator.js"></script>
+  </body>
+</html>

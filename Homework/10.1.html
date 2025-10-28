@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML, CSS, JavaScript</title>
+
+    <style>
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .add-to-cart-button {
+        padding: 5px 20px;
+        border: none;
+        border-radius: 100px;
+        background-color: rgb(255, 216, 20);
+        margin-bottom: 16px;
+      }
+
+      .gaming-tab-button,
+      .music-tab-button,
+      .tech-tab-button {
+        padding: 6px 16px;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      .is-toggled {
+        color: black;
+        background-color: rgb(184, 184, 184);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <button class="add-to-cart-button js-button">Add to cart</button>
+
+    <br>
+
+    <button class="gaming-tab-button js-toggle-button" onClick="toggleOnClick('gaming')">
+      Gaming
+    </button>
+
+    <button class="music-tab-button js-toggle-button" onClick="toggleOnClick('music')">
+      Music
+    </button>
+
+    <button class="tech-tab-button js-toggle-button" onClick="toggleOnClick('tech')">
+      Tech
+    </button>
+
+    <script>
+
+      function toggleOnClick(tabName) {
+
+        const buttonElement = document.querySelector(`.${tabName}-tab-button`);
+
+        if (buttonElement.classList.contains('is-toggled')){
+
+          buttonElement.classList.remove('is-toggled');
+        }
+        else 
+          buttonElement.classList.add('is-toggled');
+        }
+
+      const buttonElement = document.querySelector('.js-button');
+
+      const checkClass = buttonElement.classList.contains('js-button');
+
+      console.log(checkClass);
+    </script>
+  </body>
+</html>

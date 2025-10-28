@@ -5,6 +5,12 @@
     <title>DOM PROJECTS</title>
   </head>
 
+  <style>
+    .error-para {
+      color: red;
+    }
+  </style>
+
   <body>
 
     <p>Amazon Shipping Calculator</p>
@@ -45,6 +51,13 @@
         const inputElement = document.querySelector('.js-cost-input');
 
         let cost = Number(inputElement.value);
+
+        if (cost < 0) {
+          document.querySelector('.show-text-para').innerHTML =
+          'Error: cost cannot be less than $0';
+
+          document.querySelector('.show-text-para').classList.add('error-para')
+        }
 
         let costInCent = cost * 100;
 
