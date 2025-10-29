@@ -193,3 +193,15 @@
 6. in dot notion we can put some of it in next line starting with a dot.
 
   
+# 11 LOOPS AND ARRAYS
+
+1. while (<contition>) {
+  //while loop
+  //use for non standar loops like
+  //generating a random no. with some condition
+}
+
+2. for (let i = 1; i <= 5; i++) {
+  //for loop
+}
+
