@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 11 Arrays and Loops</title>
+  </head>
+
+  <body>
+
+    <script>
+      function arrayHandler() {
+
+        const array1 = [10, 20, 30];
+
+        array1[2] = 99;
+
+        console.log(array1);
+      }
+
+      function getLastValue(array) {
+
+        const lastIndex = array.length - 1;
+        
+        return (array[lastIndex]);
+      }
+
+      function arraySwap(array) {
+        const lastIndex = array.length - 1;
+
+        let temp = array[0];
+        array[0] = array[lastIndex];
+        array[lastIndex] = temp;
+
+        return(array);
+      }
+
+      function playingWithLoops() {
+
+        const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        let count = 0;
+
+        for (let i = 0; i < 10; i += 2) {
+          count += array[i];
+        }
+
+        console.log(count);
+      }
+
+      playingWithLoops();
+    </script>
+  </body>
+</html>
