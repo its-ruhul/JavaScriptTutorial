@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays and Loops</title>
+  </head>
+
+  <body>
+    
+    <script>
+
+      function findIndex(array, word) {
+
+        let wordInArray = false;
+
+        for( let i = 0; i < array.length; i++){
+
+          if (array[i] === word){
+            console.log(i);
+            wordInArray = true;
+            break;
+          }
+        }
+
+        if (wordInArray === false){
+          console.log(-1);
+        }
+      }
+
+      function removeEgg(foods) {
+
+        let removedEggsFoods = [];
+
+        let j = 0;
+        let noOfEggs = 0;
+
+        let reversedFoods = foods.reverse();
+
+        for (let i = 0; i < reversedFoods.length; i++){
+
+          if (noOfEggs < 2){
+
+            if (reversedFoods[i] === 'eggs') {
+              noOfEggs++;
+              continue;
+            }
+          }
+          else {
+            removedEggsFoods[j] = reversedFoods[i];
+            j++;
+          }
+        }
+
+        return(removedEggsFoods.reverse());
+      }
+
+      const foods = ['eggs', 'bhindi', 'chilli', 'eggs', 'eggs'];
+
+      console.log(removeEgg(foods).slice());
+      console.log(foods);
+
+    </script>
+  </body>
+</html>
