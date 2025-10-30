@@ -3,21 +3,26 @@
   <head>
     <title>TODO LIST</title>
 
-    <link rel="stylesheet" href="scripts/11-todo-list.js">
+    <link rel="stylesheet" href="styles/11-todo-list.css">
 
-  <head>
+  </head>
 
   <body>
 
-    <input placeholder="Todo name" class="js-name-input">
+    <div class="todo-input-grid">
+      <input placeholder="Todo name" class="js-name-input name-input">
 
-    <button onclick="
-      addTodo();
-    ">Add</button>
+      <input type="date" class="js-due-date-input due-date-input">
 
-    <div class="js-todo-list"> </div>
+      <button onclick="
+        addTodo();
+      " class="add-todo-button">Add</button>
+    </div>
+
+   
+    <div class="js-todo-list todo-grid"> </div>
   
     <script src="scripts/11-todo-list.js"></script>
   </body>
-<html>
+</html>
 

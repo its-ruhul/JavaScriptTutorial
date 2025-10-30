@@ -17,5 +17,5 @@ This repository contains all the codes and notes of JavaScript that I have learn
 27 OCT:  06:38:56 to 07:42:02               <br>
 28 OCT:  07:42:02 to 07:42:32  Homework 10  <br>
 29 OCT:
-30 OCT:
+30 OCT:           to 09:14:00  Homwork 11   <br>
 31 OCT:
