@@ -53,10 +53,47 @@
         return(removedEggsFoods.reverse());
       }
 
-      const foods = ['eggs', 'bhindi', 'chilli', 'eggs', 'eggs'];
+      function fizzBuzz(num) {
 
-      const removedEggsFromFood = removeEgg(foods).slice();
-      console.log(removedEggsFromFood);
+        for (let i = 1; i <= num; i++){
+
+          if (i % 3 === 0 && i % 5 !== 0){
+            console.log('Fizz');
+          }
+          else if (i % 3 !== 0 && i % 5 === 0){
+            console.log('Buzz');
+          }
+          else if (i % 3 === 0 && i % 5 === 0){
+            console.log('FizzBuzz')
+          }
+          else {
+            console.log(i);
+          }
+        }
+      }
+
+      function unique(array) {
+
+        let deletedDuplicatesArray = [];
+        let k = 0;
+
+        for (let i = 0; i < array.length; i++){
+
+          for (let j = i; j < array.length; j++){
+
+            if (array[i] === array[j] || i === j) {
+              continue;
+            }
+            else {
+              deletedDuplicatesArray[k] = array[i];
+            }
+          }
+        }
+
+        return( deletedDuplicatesArray);
+      }
+
+      console.log(unique(['ruhul', 'ruhul', 'ruhul', 'priyanshi']));
 
     </script>
   </body>
