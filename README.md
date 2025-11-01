@@ -18,4 +18,6 @@ This repository contains all the codes and notes of JavaScript that I have learn
 28 OCT:  07:42:02 to 07:42:32  Homework 10  <br>
 29 OCT:
 30 OCT:           to 09:14:00  Homwork 11   <br>
-31 OCT:
+31 OCT:                                     <br>
+
+01 NOV:                         Homework 11 <br>
