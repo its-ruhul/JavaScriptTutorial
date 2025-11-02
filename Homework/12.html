@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+
+  <body>
+
+    <button onClick="
+      setTimeout(timer1s, 1000);
+      loading();" class="start-button">
+      Start
+    </button>
+
+    <p></p>
+
+    <button onClick="addToCart();" class="js-add2cart-button">
+      Add to cart
+    </button>
+
+    <p class="js-cart-status"></p>
+
+    <script>
+
+      function addToCart() {
+
+        let cartStatusElm = document.querySelector('.js-cart-status');
+
+        cartStatusElm.innerHTML = 'Added';
+
+        setTimeout(cartStatusElm.innerHTML = '', 2000);
+      }
+
+      const add = function(){
+        console.log(2+3);
+      };
+
+      function runTwice(fun){
+        console.log('runTwice is executed');
+        fun();
+        fun();
+      }
+
+      function timer1s() {
+        
+        let buttonElement = document.querySelector('.start-button');
+        buttonElement.innerHTML = 'Finished';
+      }
+
+      function loading() {
+        let buttonElement = document.querySelector('.start-button');
+        buttonElement.innerHTML = 'Loading...';
+      }
+
+    </script>
+  </body>
+</html>
