@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Advanced Functions</title>
+    <title>App</title>
   </head>
 
   <body>
@@ -22,13 +22,31 @@
 
     <script>
 
+      function updateTitle(noOfMessage){
+
+        let titleElement = document.querySelector('title');
+
+        if (noOfMessage > 0) {
+
+          setInterval(function )
+        }
+        
+      }
+
       function addToCart() {
+
+        let timerID;
 
         let cartStatusElm = document.querySelector('.js-cart-status');
 
         cartStatusElm.innerHTML = 'Added';
 
-        setTimeout(cartStatusElm.innerHTML = '', 2000);
+        clearTimeout(timerID);
+
+        timerID = setTimeout(function(){
+          cartStatusElm.innerHTML = '';
+        }, 2000);
+
       }
 
       const add = function(){
