@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App</title>
+    <title clas="title">tap</title>
   </head>
 
   <body>
@@ -24,14 +24,24 @@
 
       function updateTitle(noOfMessage){
 
-        let titleElement = document.querySelector('title');
+        let titleElement = document.querySelector('.title');
+
+        setInterval(function() {
+          titleElement.innerHTML = 'App';
+        }, 1000); 
 
         if (noOfMessage > 0) {
 
-          setInterval(function )
+          setInterval(function() {
+            titleElement.innerHTML = `(${noOfMessage}) Messages`;
+          }, 1000);
         }
+
+        return (updateTitle(noOfMessage));   
         
       }
+
+      updateTitle(5);
 
       function addToCart() {
 
