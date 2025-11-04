@@ -24,38 +24,9 @@
 
       function updateTitle(noOfMessage){
 
-        let titleElement = document.querySelector('.title');
-
-        setInterval(function() {
-          titleElement.innerHTML = 'App';
-        }, 1000); 
-
         if (noOfMessage > 0) {
-
-          setInterval(function() {
-            titleElement.innerHTML = `(${noOfMessage}) Messages`;
-          }, 1000);
+          
         }
-
-        return (updateTitle(noOfMessage));   
-        
-      }
-
-      updateTitle(5);
-
-      function addToCart() {
-
-        let timerID;
-
-        let cartStatusElm = document.querySelector('.js-cart-status');
-
-        cartStatusElm.innerHTML = 'Added';
-
-        clearTimeout(timerID);
-
-        timerID = setTimeout(function(){
-          cartStatusElm.innerHTML = '';
-        }, 2000);
 
       }
 
