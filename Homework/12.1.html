@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced functions 2</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      const multiply = (num1, num2) => num1 * num2;
+
+      function addNum (array, num) {
+
+        let addedArray = array.map(value => value * num);
+
+        return addedArray;
+      }
+
+      function countPositive(numbers) {
+
+        let posCount = 0;
+
+        numbers.forEach((value, index) => {
+
+          if (value > 0){
+            posCount++;
+          }
+        });
+
+        return posCount;
+
+      }
+
+      function removeEggs(foods) {
+
+        let count = 0;
+
+        let eggRemoved = foods.filter((value, index) => {
+
+          if (count < 2 && value === 'egg') {
+            count++;
+            return false;
+          }
+          else {
+            return true;
+          }
+          
+
+        });
+
+        return eggRemoved;
+      }
+
+      console.log(removeEggs(['egg', 'paneer', 'chicken', 'egg', 'paneer', 'egg', 'egg']));
+
+    </script>
+  </body>
+</html>

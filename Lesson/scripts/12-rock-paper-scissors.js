@@ -26,6 +26,9 @@ function autoPlay() {
 
   if (!isAutoPlaying) {
 
+    const autoPlayButton = document.querySelector('.js-auto-play-button');
+    autoPlayButton.innerHTML = 'Stop Playing';
+
     intervalId = setInterval( () => {
 
       const playerMove = pickComputerMove();
@@ -35,6 +38,10 @@ function autoPlay() {
     isAutoPlaying = true;
   } 
   else {
+
+    const autoPlayButton = document.querySelector('.js-auto-play-button');
+    autoPlayButton.innerHTML = 'Auto Play';
+
     clearInterval(intervalId);
     isAutoPlaying = false;
   }
@@ -54,16 +61,61 @@ document.querySelector('.js-scissors-button').addEventListener('click', () => {
 });
 
 document.querySelector('.js-reset-button').addEventListener('click', () => {
+  /*
   score.wins = 0;
   score.losses = 0;
   score.ties = 0;
   localStorage.removeItem('score');
-  updateScoreElement();;
+  updateScoreElement();
+  */
+
+  resetScore();
 });
+
+function resetScore() {
+
+  const confirmPopUpElm = document.querySelector('.js-confirm-pop-up');
+
+  confirmPopUpElm.innerHTML = `
+  
+    Are you sure you want to reset the score?
+
+    <button class="js-yes-button yes-button">Yes</button>
+    <button class="js-no-button no-button">No</button>
+  `;
+
+  const yesButtonElm = document.querySelector('.js-yes-button');
+  const noButtonElm = document.querySelector('.js-no-button');
+
+  yesButtonElm.addEventListener('click', () => {
+
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();;
+
+    confirmPopUpElm.innerHTML = '';
+  });
+
+  noButtonElm.addEventListener('click', () => {
+
+    confirmPopUpElm.innerHTML = '';
+  });
+}
 
 document.querySelector('.js-auto-play-button').addEventListener('click', () => {
   autoPlay();
 });
+
+document.addEventListener('keydown', (event) => {
+
+  if (event.key === 'a') {
+    autoPlay();
+  }
+});
+
+
 
 document.body.addEventListener('keydown', (event) => {
   
